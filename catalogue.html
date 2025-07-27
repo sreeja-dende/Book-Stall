@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Arrangement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .book-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px;
+            white-space: nowrap;
+            scrollbar-width: thin;
+        }
+        .book {
+            background: white;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .book-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .book-price {
+            margin-top: 5px;
+            color: green;
+            font-size: 1.2em;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy {
+            background-color: #28a745;
+            color: white;
+        }
+        .cart {
+            background-color: #007bff;
+            color: white;
+        }
+              body{
+
+                width: 1035px;;
+                height: 500px;
+                background-image: url(photo.jpg);
+                background-repeat:no-repeat;
+                background-size: cover;
+                
+                
+            
+            }
+    </style>
+</head>
+<body>
+    <i>NOVELS</i>
+    <div class="book-container">
+        <div class="book">
+            <img src="/home/user/Downloads/novel1.jpg" alt="Book 1">
+            
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel2.jpg" alt="Book 2">
+            
+            <div class="book-price">$392</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel3.jpg" alt="Book 3">
+        
+            <div class="book-price">$299</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')" >Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel4.jpg" alt="Book 4">
+        
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel5.jpg" alt="Book 5">
+            
+            <div class="book-price">$250</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div> 
+       
+       
+        
+    </div>
+    
+    <br><br><br>   
+     <i>FICTIONAL</i>
+    <div class="book-container">
+        <div class="book">
+            <img src="/home/user/Downloads/f1.jpg" alt="Book 1">
+            
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/f2.jpg" alt="Book 2">
+            
+            <div class="book-price">$392</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/f3.jpg" alt="Book 3">
+        
+            <div class="book-price">$299</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')" >Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/f4.jpg" alt="Book 4">
+        
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/f5.jpg" alt="Book 5">
+            
+            <div class="book-price">$250</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div> 
+       
+       
+        
+    </div>
+    
+    <br><br><br>
+    
+     <i>HORROR</i>
+   <div class="book-container">
+        <div class="book">
+            <img src="/home/user/Downloads/h1.jpg" alt="Book 1">
+            
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/h2.jpg" alt="Book 2">
+            
+            <div class="book-price">$392</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cartsuccesful')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel3.jpg" alt="Book 3">
+        
+            <div class="book-price">$299</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')" >Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel5.jpg" alt="Book 4">
+        
+            <div class="book-price">$200</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="/home/user/Downloads/novel4.jpg" alt="Book 5">
+            
+            <div class="book-price">$250</div>
+            <div class="buttons">
+                <button class="btn buy" onclick="alert('book purchase succesful')">Buy</button>
+                <button class="btn cart" onclick="alert('book added to cart succesfully')">Cart</button>
+            </div>
+        </div> 
+       
+       
+        
+    </div>
+   
+</body>
+</html>

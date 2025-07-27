@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title> Welcome to login!!!</title>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+  .login-container{
+            background-color: #fff;
+            width: 300px;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .fgroup {
+            margin-bottom: 15px;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #cae336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        body
+        {   background-image: url(/home/user/Downloads/books-5615562_1280.jpg);
+        }
+
+.error {
+            color: red;
+            font-size: 12px;
+        }
+
+  </style>
+</head>
+
+<body>
+    
+
+  <div class="login-container">
+    <form id="loginForm" action="file:///home/user/Documents/catalogue.html" method="POST" onsubmit="return validateForm()">
+      <h2>LOGIN</h2>
+      <div class="fgroup">
+     <label for="user">Username:</label>
+     <input type="text" id="user" placeholder="enter username" ></div>
+     <span id="usernameError" class="error"></span>
+     <br><br>
+     <div class="fgroup">
+    <label for="secret">Password:</label>
+     <input type="text" id="secret" placeholder="enter password">
+     <span id="passwordError" class="error"></span></div>
+     <div class="fgroup">
+                <input type="submit" value="Login">
+            </div>
+     </form>
+   </div> 
+
+
+ <script>
+        function validateForm() {
+            // Clear previous error messages
+            document.getElementById("usernameError").textContent = "";
+            document.getElementById("passwordError").textContent = "";
+
+            // Get user input
+            const username = document.getElementById("user").value;
+            const password = document.getElementById("secret").value;
+
+            // Validate: Check if username and password are filled
+            if (username === "" || password === "") {
+                if (username === "") {
+                    document.getElementById("usernameError").textContent = "Username is required.";
+                }
+                if (password === "") {
+                    document.getElementById("passwordError").textContent = "Password is required.";
+                }
+                return false; // Prevent form submission
+            }
+
+            // Validate username (for example, only alphabetic characters)
+            const usernameRegex = /^[A-Za-z]+$/;
+            if (!usernameRegex.test(username)) {
+                document.getElementById("usernameError").textContent = "Username must contain only letters.";
+                return false;
+            }
+
+            // Validate password (at least 8 characters, 1 uppercase, 1 number)
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                document.getElementById("passwordError").textContent = "Password must be at least 8 characters, contain 1 uppercase letter and 1 number.";
+                return false;
+            }
+
+            // If everything is valid
+            alert("Login successful!");
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

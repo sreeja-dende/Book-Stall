@@ -1,0 +1,100 @@
+header
+{ background:#364036;
+  color:#b8aa95;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+   align-items:center;
+ }
+ body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-image: url(/opt/lampp/htdocs/wt/pexels-pixabay-159711.jpg);  
+}
+ nav ul
+ { list-style:none;
+  display:flex;
+ }
+ 
+ nav ul li{ margin:0 15px;
+  }
+   button {
+          text-decoration: none; /* Remove underline */
+            color:  white; /* Make link text blue */
+            background-color:#364036; 
+           padding:6px 12px;
+            align-items:center;
+            justify-content:center;
+            border-radius:40px;
+    }
+   
+    button:hover{
+            color:  #3498db; /* Change text color when hovered */
+        }
+        
+   h2:hover {
+            color:  #3498db; /* Change text color when hovered */
+        }
+        
+  h1{
+  font-family:Georgia, serif;
+  font-size: 4rem; 
+   }
+   
+ /* Change color of bold text */
+b{
+    color: #e74c3c;  /* Change to your desired color */
+}
+
+
+
+.container {
+            display: flex; /* Flexbox container */
+            align-items: center; /* Vertically center the content */
+        }
+
+    
+
+   /* Style for the scrolling menu */
+    .menu {
+            
+      width: 200px; /* Set width for the menu*/ 
+      height: 100vh;
+      overflow-y: scroll; /* Allows scrolling*/ 
+      background-color: #324035;
+      padding-top: 0px;
+     
+      box-sizing: content-box; 
+    }
+    
+    .menu a {
+       display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #ebf5ed;
+            font-family:Georgia, serif;}
+      /*display: block;
+      margin: 100px 20;
+      text-decoration: none;
+      color:  white; 
+       font-family:Georgia, serif;
+       }*/
+    .sidebar a:hover {
+            background: #ddd;
+        }
+
+    .content {
+            padding: 2px;
+        }
+
+        iframe {
+            width: 1100px;
+            height: 100vh;
+            border: none;
+        }
+  
