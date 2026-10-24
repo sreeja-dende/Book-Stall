@@ -1,14 +1,5 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password_db = "sreeja17"; 
-$dbname = "dbms"; 
-$conn =mysqli_connect($host, $username, $password, $database);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require_once __DIR__ . '/../db.php';
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -33,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($stmt->execute()) {
         // Redirect to login page
-        echo "<script>alert('Registration successful! Redirecting to login page.'); window.location.href='login.html';</script>";
+        echo "<script>alert('Registration successful! Redirecting to login page.'); window.location.href='../login/login.html';</script>";
     } else {
         echo "Error: " . $stmt->error;
     }

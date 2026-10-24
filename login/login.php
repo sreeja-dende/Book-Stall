@@ -1,16 +1,7 @@
 <?php
 session_start();
 
-$servername = "127.0.0.1";
-$username = "root";
-$password_db = "sreeja17"; 
-$dbname = "dbms"; 
-$conn =mysqli_connect($host, $username, $password, $database);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require_once __DIR__ . '/../db.php';
 
 // Get POST data
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -31,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // If password matches
         if (password_verify($inputPassword, $user['password'])) {
             $_SESSION['user'] = $user;
-            header("Location: catalogue.php"); // You can replace this with catalogue.html but PHP will not access session in .html
+            header("Location: ../catalogue/catalogue.html");
             exit();
         } else {
             echo "<script>alert('Incorrect password'); window.location.href='login.html';</script>";

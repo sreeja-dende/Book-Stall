@@ -50,7 +50,7 @@
         }
         
         body
-        {   background-image: url(/opt/lampp/htdocs/wt/Images/books-5615562_1280.jpg);
+        {   background-image: url(../Images/books-5615562_1280.jpg);
         }
 
 .error {
@@ -65,16 +65,16 @@
     
 
   <div class="login-container">
-    <form id="loginForm" action="file:///home/user/Documents/catalogue.html" method="POST" onsubmit="return validateForm()">
+    <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
       <h2>LOGIN</h2>
       <div class="fgroup">
      <label for="user">Username:</label>
-     <input type="text" id="user" placeholder="enter username" ></div>
+     <input type="text" id="user" name="user" placeholder="enter username" ></div>
      <span id="usernameError" class="error"></span>
      <br><br>
      <div class="fgroup">
     <label for="secret">Password:</label>
-     <input type="text" id="secret" placeholder="enter password">
+     <input type="password" id="secret" name="secret" placeholder="enter password">
      <span id="passwordError" class="error"></span></div>
      <div class="fgroup">
                 <input type="submit" value="Login">
